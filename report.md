@@ -38,8 +38,8 @@ or 'African Restaurant', is changed to 'Restaurant'. Every venue category is one
 per neighborhood giving a count of how many venues of that type are there. One can see that the neighborhood 
 *Commerce Court* has 31 restaurants, being pretty packed.
 
-#Methodology
-##Exploratory Analysis
+# Methodology
+## Exploratory Analysis
 I want to test if some venues drive the demand for restaurants in the neighborhood up. For example,
 if I scatterplot the restaurant category vs train station category, I get that only 4 neighborhood groups
 have train station and 3 of them have more than 15 restaurants. The neighborhood of Kennedy Park, Ionview and
@@ -53,7 +53,7 @@ hard to interpret. One can fit the top 25, by number of restaurants, and use the
 neighborhoods. With that done and checked for a predicted number of restaurants higher than actual might indicate a good
 spot.
 
-##Clustering
+## Clustering
 If I remove the restaurant count and cluster the neighborhoods by the other counts, I expect to find neighborhoods that 
 are similar to high restaurants' one but not much restaurants. Those neighborhoods are the ones with potential for new 
 restaurants. The counts will be scaled so that each venue category has a balanced contribution to the distance measures.
@@ -61,7 +61,7 @@ restaurants. The counts will be scaled so that each venue category has a balance
 I sort the neighborhoods in descending order of number of restaurants and look at the assigned clusters. Berczy Park is
 in the same cluster of neighboorhoods with 20+ restaurants, but it has only 13.
 
-#Results and Conclusion
+# Results and Conclusion
 After drawing a map and putting a dot on each neighborhood coordinate, I see that the cluster of neighborhoods packed with 
 restaurants is also spatial. They are all near Commerce Court and Toronto Union Station. So k-means is selecting this area
 for a cluster.
